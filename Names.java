@@ -17,14 +17,23 @@ public class Names {
     }
 
     private static String formatName(String name) {
+        String formattedName;
+
         // Split the name into parts
         String[] parts = name.split("\\s+");
 
         // Extract last name
         String lastName = parts[parts.length - 1];
 
-        // Initialize formatted name with last name
-        String formattedName = lastName + ", ";
+        if (name.contains(" ") == true) {
+            // Initialize formatted name with last name
+            formattedName = lastName + ", ";
+        
+            // Single Name
+            String singleName = lastName;
+        } else {
+            formattedName = lastName;
+        }
 
         // Process initials
         for (int i = 0; i < parts.length - 1; i++) {
