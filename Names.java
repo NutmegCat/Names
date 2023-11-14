@@ -28,9 +28,7 @@ public class Names {
         if (name.contains(" ") == true) {
             // Initialize formatted name with last name
             formattedName = lastName + ", ";
-        
-            // Single Name
-            String singleName = lastName;
+
         } else {
             formattedName = lastName;
         }
