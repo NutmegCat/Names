@@ -24,6 +24,11 @@ public class Names {
         // Split the name into parts
         String[] parts = name.split("\\s+");
 
+        // Check if there's only one name
+        if (parts.length == 1) {
+            return parts[0];
+        }
+
         // Extract last name
         String lastName = parts[parts.length - 1];
 
