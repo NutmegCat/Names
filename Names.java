@@ -27,13 +27,8 @@ public class Names {
         // Extract last name
         String lastName = parts[parts.length - 1];
 
-        if (name.contains(" ") == true) {
-            // Initialize formatted name with last name
+        // Initialize formatted name with last name
             formattedName = lastName + ", ";
-
-        } else {
-            formattedName = lastName;
-        }
 
         // Process initials
         for (int i = 0; i < parts.length - 1; i++) {
